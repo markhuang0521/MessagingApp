@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_search_user"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Search user"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_log_out"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:title="Log Out"
+        app:showAsAction="never" />
+
+</menu>

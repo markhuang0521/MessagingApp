@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MessageActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_message_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout_send_chat"
+        android:padding="18dp" />
+
+    <LinearLayout
+        android:id="@+id/layout_send_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_media_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/layout_send_chat"
+            android:padding="18dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_message_info"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".8" />
+
+            <Button
+                android:id="@+id/btn_send_media"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".2"
+
+                android:background="@color/colorPrimary"
+                android:text="Media "
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btn_send_message"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".2"
+
+                android:background="@color/colorPrimary"
+                android:text="Send"
+                android:textColor="@android:color/white" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
